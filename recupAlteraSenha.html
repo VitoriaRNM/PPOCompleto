@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+    <head>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="css/senha.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   </head>
+
+   <body>
+    <div class="senha">
+      <p class = "titulo">Sign Writing </p><br/>
+      <p class= "rec"> Redefinir Senha </p> <br/><br/>
+      <form>
+        <input type="password" name="senhaForca" id="senhaForca" placeholder="Nova Senha" minlength=" 8" required
+       onkeyup= "validarSenhaForca()"><br><br>
+       <input type="password" name="senhaForca" id="senhaForca" placeholder="Confirmar Senha" minlength=" 8" required
+       onkeyup= "validarSenhaForca()"><br><br>
+        <div class="edite" id="impSenha"></div>
+        <div class="edite" id="impForcaSenha"></div>
+        <div class="edite" id="erroSenhaForca"></div>
+        <br/>
+        <button class="btn btn-secondary butao" >Salvar Senha</button>
+     </form>
+   </div>
+
+<!--Vlibras-->
+   <div vw class="enabled">
+   <div vw-access-button class="active"></div>
+   <div vw-plugin-wrapper>
+     <div class="vw-plugin-top-wrapper"></div>
+   </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+   new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+     <script src= "personalizado.js"></script>
+
+        </body>
+ </html>
