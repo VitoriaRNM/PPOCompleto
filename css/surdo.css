@@ -1,0 +1,201 @@
+body{
+  width: 95%;
+  height: 80%;
+
+  background-color:#1ac6ff ;
+  margin: 30px;
+  margin-top: auto;
+}
+
+main{
+  margin-top: 100px;
+  color: #00000054;
+  margin-top: 20px;
+  border-radius: 100px;
+}
+
+.principal{
+
+width: 180px;
+height: 656px;
+background: #1ac6ff;
+border-radius: 5px;
+float: left;
+
+}
+
+ul{
+  list-style: none;
+
+}
+ul li{
+  margin-top: 40px;
+  margin-left: 10px;
+  position:relative;
+  top: -70px
+}
+
+.butao{
+   width: 100px;
+
+}
+
+.titulo{
+  color:white;
+  float:top;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px white;
+  margin-left: 100px;
+  font-family: 'Titania';
+}
+
+.slogan{
+  background-color:#1ac6ff ;
+  position: relative;
+  left: 95px;
+  width: 1270px;
+  height: 55px;
+
+}
+
+
+.redondo{
+  border-radius: 35px;
+  background-size:  50px;
+  background-color: #e6e6e6;
+  font-size: 50px;
+  padding: 10px 10px;
+  color: #595959;
+  margin-left: 20px;
+
+
+}
+
+.redondo:hover{
+  text-decoration: none;
+  color: white ;
+
+}
+
+
+
+/*Menu*/
+#menu{
+	position:fixed;
+	background-color:#1ac6ff  ;
+	height:100%;
+	z-index:10;
+	width:180px;
+	color:white;
+	top:0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	opacity:1;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+#menu ul{
+	list-style:none;
+	margin-top:0;
+	padding:0
+}
+#menu ul li{border-bottom: 1px solid #fffcfc;}
+#menu>ul>li>a{border-left:4px solid #fffcfc; }
+#menu ul li a{
+	color:inherit;
+	font-size:16px;
+	display:block;
+	padding:8px 0 8px 7px;
+	text-decoration:none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	font-weight: 600;
+}
+#menu ul a i{
+	margin-right:10px;
+	font-size: 18px;
+	margin-top: 3px;
+	width: 20px;
+}
+#menu ul a i[class*='fa-caret']{float: right;}
+#menu ul a:hover,#menu ul a.active{
+	background-color:white;
+	border-left-color: #009973;
+	color:#009973;
+
+}
+#menu ul a:hover i:first-child{color:#FFCC33;}
+
+	/* Submenu */
+  #menu ul li ul li{border-bottom: none;}
+  #menu ul li ul li a{padding-left: 20px;}
+  #menu ul li ul li a{border-left:4px solid #fffcfc; }
+    #menu li  ul{
+position:absolute;
+top:50px;
+left:168px;
+background-color:#1ac6ff;
+display:none;}
+#menu li:hover ul, .menu li.over ul{display:block;}
+#menu li ul li{
+border:1px solid white;
+display:block;
+width:170px;
+height: 0px;
+margin-top: 90px;
+}
+.botao{
+top: -80px;
+padding-top: -120px;
+
+}
+	/* /Submenu */
+
+/* barra de busca */
+.box {
+  width: 600px;
+  height: 50px;
+  margin-top: 60px;
+  margin-left: 250px;
+  background-color:#009973;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  z-index: 1;
+
+}
+
+/* Lupa */
+.box > span {
+  font-size: 25px;
+  color: #000;
+  z-index: 1;
+  cursor: pointer;
+
+
+}
+
+/* input do usuário na busca */
+.box > input {
+  flex: 1;
+  height: 30px;
+  width: 50px;
+  border: none;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding-left: 50px;
+}
+
+footer {
+  background: black;
+  color: gray;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  z-index: 2;
+}
